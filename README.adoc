@@ -1,6 +1,6 @@
-= Build an Neo4j-backed Chatbot using Python
+= Build a Neo4j-backed Chatbot using Python with Google's Generative AI
 
-This repository accompanies the link:https://graphacademy.neo4j.com/courses/llm-chatbot-python[Build an Neo4j-backed Chatbot using Python^] course on link:https://graphacademy.neo4j.com/?ref=github[Neo4j GraphAcademy^].
+This repository accompanies the link:https://graphacademy.neo4j.com/courses/llm-chatbot-python[Build a Neo4j-backed Chatbot using Python^] course on link:https://graphacademy.neo4j.com/?ref=github[Neo4j GraphAcademy^], modified to use Google's Generative AI (Gemini 2.0 Flash) instead of OpenAI.
 
 For a complete walkthrough of this repository, link:https://graphacademy.neo4j.com/courses/llm-chatbot-python/?ref=github[enrol now^].
 
@@ -18,6 +18,15 @@ Then run the `streamlit run` command to start the app on link:http://localhost:8
 
 [source,sh]
 streamlit run bot.py
+
+== Setting up Google Generative AI
+
+This project uses Google's Generative AI (Gemini 2.0 Flash) instead of OpenAI. You'll need to:
+
+1. Create a Google Cloud account if you don't have one
+2. Enable the Generative AI API
+3. Create an API key 
+4. Add your API key to the .streamlit/secrets.toml file
 
 == Tests
 
@@ -37,4 +46,4 @@ pip install pytest
 . Run the tests
 +
 [source,sh]
-pytest
+pytest 
